@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+</head>
+<body>
+	<script>
+		var f = document.createElement('form');
+		f.action='https://tbnpg.settlebank.co.kr/corp/main.do';
+		f.method='POST';
+		f.setAttribute('style','opacity: 0');
+
+		var mchtId=document.createElement('input');
+		mchtId.type='text';
+		mchtId.name='mchtId';
+		mchtId.value='hecto_test';
+		f.appendChild(mchtId);
+
+		var method=document.createElement('input');
+		method.type='text';
+		method.name='method';
+		method.value='corp';
+		f.appendChild(method);
+
+		var corpPayCode=document.createElement('input');
+		corpPayCode.type='text';
+		corpPayCode.name='corpPayCode';
+		corpPayCode.value='KKP';
+		f.appendChild(corpPayCode);
+
+		var trdDt=document.createElement('input');
+		trdDt.type='text';
+		trdDt.name='trdDt';
+		trdDt.value='20230503';
+		f.appendChild(trdDt);
+
+		var trdTm=document.createElement('input');
+		trdTm.type='text';
+		trdTm.name='trdTm';
+		trdTm.value='095737';
+		f.appendChild(trdTm);
+
+		var mchtTrdNo=document.createElement('input');
+		mchtTrdNo.type='text';
+		mchtTrdNo.name='mchtTrdNo';
+		mchtTrdNo.value='3b9d73e6-f957-4bd5-bf62-9aaf982b8fc1';
+		f.appendChild(mchtTrdNo);
+
+		var mchtName=document.createElement('input');
+		mchtName.type='text';
+		mchtName.name='mchtName';
+		mchtName.value='플러스알파트레이딩';
+		f.appendChild(mchtName);
+
+		var pmtPrdtNm=document.createElement('input');
+		pmtPrdtNm.type='text';
+		pmtPrdtNm.name='pmtPrdtNm';
+		pmtPrdtNm.value='BOZORAKA Product Payment';
+		f.appendChild(pmtPrdtNm);
+
+		var trdAmt=document.createElement('input');
+		trdAmt.type='text';
+		trdAmt.name='trdAmt';
+		trdAmt.value='FGpxWZuDcn0/x45lRvobtg==';
+		f.appendChild(trdAmt);
+
+		var notiUrl=document.createElement('input');
+		notiUrl.type='text';
+		notiUrl.name='notiUrl';
+		notiUrl.value='https://admin.valixon.bexatobot.uz/api/v1/kakao-payments/3b9d73e6-f957-4bd5-bf62-9aaf982b8fc1/result';
+		f.appendChild(notiUrl);
+
+		var nextUrl=document.createElement('input');
+		nextUrl.type='text';
+		nextUrl.name='nextUrl';
+		nextUrl.value='https://admin.valixon.bexatobot.uz/api/v1/kakao-payments/3b9d73e6-f957-4bd5-bf62-9aaf982b8fc1/next';
+		f.appendChild(nextUrl);
+
+		var cancUrl=document.createElement('input');
+		cancUrl.type='text';
+		cancUrl.name='cancUrl';
+		cancUrl.value='https://admin.valixon.bexatobot.uz/api/v1/kakao-payments/3b9d73e6-f957-4bd5-bf62-9aaf982b8fc1/cancel';
+		f.appendChild(cancUrl);
+
+		var pktHash=document.createElement('input');
+		pktHash.type='text';
+		pktHash.name='pktHash';
+		pktHash.value='c769f5f97f8a8bbea7a0d4c7590d264fcedca0ebadc4f32322c14342af41e1c9';
+		f.appendChild(pktHash);
+
+		document.body.appendChild(f);
+		setTimeout(f.submit(), 100)
+	</script>
+</body>
+</html>	
+
